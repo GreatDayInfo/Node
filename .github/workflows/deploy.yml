@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
-  
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -26,15 +27,14 @@ jobs:
         run: npx vitepress build
 
       - name: Adjust build directory
-  run: |
-    if [ -d ".vitepress/dist/docs" ]; then
-      mv .vitepress/dist/docs/* .vitepress/dist/
-      rm -rf .vitepress/dist/docs
-    fi
+        run: |
+          if [ -d ".vitepress/dist/docs" ]; then
+            mv .vitepress/dist/docs/* .vitepress/dist/
+            rm -rf .vitepress/dist/docs
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .vitepress/dist
-          
