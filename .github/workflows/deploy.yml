@@ -23,7 +23,14 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: npx vitepress build docs
+        run: npx vitepress build
+
+      - name: Adjust build directory
+  run: |
+    if [ -d ".vitepress/dist/docs" ]; then
+      mv .vitepress/dist/docs/* .vitepress/dist/
+      rm -rf .vitepress/dist/docs
+    fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
