@@ -1,5 +1,5 @@
 // 样式
-import "./Node/style/index.css"; //自定义样式
+import "./style/index.css"; //自定义样式
 import DefaultTheme from "vitepress/theme";
 import HomeUnderline from "./component/HomeUnderline.vue"; // 首页下划线
 import confetti from "./component/confetti.vue";
