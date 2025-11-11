@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import { withPwa } from "@vite-pwa/vitepress";
 // https://vitepress.dev/reference/site-config
-export default withPwa(
+export default defineConfig(
   defineConfig({
     base: "/Node/", // 设置站点根路径
     lang: "zh-CN",
@@ -261,7 +261,7 @@ export default withPwa(
     },
     pwa: {
       base: "/Node/",
-      scope: "/",
+      scope: "/Node/",
       outDir: ".vitepress/dist", // 输出目录
       registerType: "autoUpdate", // 注册类型为自动更新
       includeManifestIcons: false, // 不包含清单图标
@@ -269,7 +269,7 @@ export default withPwa(
         name: "锅头的家", // 应用名称
         short_name: "锅头的家", // 应用的短名称
         description: "后端打工仔的成长日记", // 应用的描述
-        start_url: "/", // 应用启动路径
+        start_url: "/Node/", // 应用启动路径
         display: "standalone", // 应用显示模式
         theme_color: "#ffffff",
         icons: [
