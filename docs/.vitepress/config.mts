@@ -3,7 +3,7 @@ import { withPwa } from "@vite-pwa/vitepress";
 // https://vitepress.dev/reference/site-config
 export default withPwa(
   defineConfig({
-    base: "/", // 设置站点根路径
+    base: "/Node/", // 设置站点根路径
     lang: "zh-CN",
     metaChunk: true,
     lastUpdated: true, // 使用 Git 获取每个页面的最后更新时间戳
@@ -260,7 +260,7 @@ export default withPwa(
       },
     },
     pwa: {
-      base: "/",
+      base: "/Node/",
       scope: "/",
       outDir: ".vitepress/dist", // 输出目录
       registerType: "autoUpdate", // 注册类型为自动更新
