@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import { withPwa } from "@vite-pwa/vitepress";
 // https://vitepress.dev/reference/site-config
-export default defineConfig(
+export default withPwa(
   defineConfig({
     base: "/Node/", // 设置站点根路径
     lang: "zh-CN",
