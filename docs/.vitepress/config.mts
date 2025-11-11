@@ -260,7 +260,7 @@ export default withPwa(
       },
     },
     pwa: {
-      base: "./",
+      base: "/Node/",
       scope: "/",
       outDir: ".vitepress/dist", // 输出目录
       registerType: "autoUpdate", // 注册类型为自动更新
