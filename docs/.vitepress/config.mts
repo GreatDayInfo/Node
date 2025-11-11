@@ -3,7 +3,7 @@ import { withPwa } from "@vite-pwa/vitepress";
 // https://vitepress.dev/reference/site-config
 export default withPwa(
   defineConfig({
-     base: "../docs/", // 设置站点根路径
+     base: "/Node/", // 设置站点根路径
     lang: "zh-CN",
     metaChunk: true,
     lastUpdated: true, // 使用 Git 获取每个页面的最后更新时间戳
@@ -63,7 +63,7 @@ export default withPwa(
       ],
     ],
     themeConfig: {
-      logo: "/logo.png",
+      logo: "/Node/logo.png",
       darkModeSwitchLabel: "暗色模式",
       sidebarMenuLabel: "目录",
       returnToTopLabel: "返回顶部",
