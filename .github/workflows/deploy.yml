@@ -23,12 +23,11 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: npx vitepress build
+        run: npx vitepress build docs
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .vitepress/dist
-          destination_dir: Node
           
