@@ -3,7 +3,7 @@ import { withPwa } from "@vite-pwa/vitepress";
 // https://vitepress.dev/reference/site-config
 export default withPwa(
   defineConfig({
-    base: "/", // 设置站点根路径
+    base: "/Node/", // 设置站点根路径
     lang: "zh-CN",
     metaChunk: true,
     lastUpdated: true, // 使用 Git 获取每个页面的最后更新时间戳
@@ -63,7 +63,7 @@ export default withPwa(
       ],
     ],
     themeConfig: {
-      logo: "/logo.png",
+      logo: "/Node/logo.png",
       darkModeSwitchLabel: "暗色模式",
       sidebarMenuLabel: "目录",
       returnToTopLabel: "返回顶部",
@@ -260,7 +260,7 @@ export default withPwa(
       },
     },
     pwa: {
-      base: "/",
+      base: "/Node/",
       scope: "/",
       outDir: ".vitepress/dist", // 输出目录
       registerType: "autoUpdate", // 注册类型为自动更新
@@ -269,7 +269,7 @@ export default withPwa(
         name: "锅头的家", // 应用名称
         short_name: "锅头的家", // 应用的短名称
         description: "后端打工仔的成长日记", // 应用的描述
-        start_url: "/", // 应用启动路径
+        start_url: "/Node/", // 应用启动路径
         display: "standalone", // 应用显示模式
         theme_color: "#ffffff",
         icons: [
