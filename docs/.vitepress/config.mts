@@ -3,7 +3,7 @@ import { withPwa } from "@vite-pwa/vitepress";
 // https://vitepress.dev/reference/site-config
 export default withPwa(
   defineConfig({
-    base: "/Node/", // 设置站点根路径
+    //base: "/Node/", // 设置站点根路径
     lang: "zh-CN",
     metaChunk: true,
     lastUpdated: true, // 使用 Git 获取每个页面的最后更新时间戳
@@ -28,7 +28,7 @@ export default withPwa(
     description:
       "时代的二锅头、锅头的家、后端、后端开发、sddegt、自学编程",
     head: [
-      ["link", { rel: "icon", href: "/Node/logo.ico" }],
+      ["link", { rel: "icon", href: "/logo.ico" }],
       [
         "meta",
         {
@@ -260,8 +260,8 @@ export default withPwa(
       },
     },
     pwa: {
-      base: "/Node/",
-      scope: "/Node/",
+      base: "/",
+      scope: "/",
       outDir: ".vitepress/dist", // 输出目录
       registerType: "autoUpdate", // 注册类型为自动更新
       includeManifestIcons: false, // 不包含清单图标
