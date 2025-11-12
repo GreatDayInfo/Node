@@ -7,7 +7,7 @@ hero:
   text: "sddegt.online"
   tagline: ""
   image:
-    src: /Node/logo.png
+    src: /logo.png
     alt: sddegt.online
   actions:
     - theme: brand
