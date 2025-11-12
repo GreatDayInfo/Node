@@ -63,7 +63,7 @@ export default withPwa(
       ],
     ],
     themeConfig: {
-      logo: "/Node/logo.png",
+      logo: "/logo.png",
       darkModeSwitchLabel: "暗色模式",
       sidebarMenuLabel: "目录",
       returnToTopLabel: "返回顶部",
