@@ -28,7 +28,7 @@ export default withPwa(
     description:
       "时代的二锅头、锅头的家、后端、后端开发、sddegt、自学编程",
     head: [
-      ["link", { rel: "icon", href: "/logo.ico" }],
+      ["link", { rel: "icon", href: "/Node/logo.ico" }],
       [
         "meta",
         {
@@ -63,7 +63,7 @@ export default withPwa(
       ],
     ],
     themeConfig: {
-      logo: "/logo.png",
+      logo: "/Node/logo.png",
       darkModeSwitchLabel: "暗色模式",
       sidebarMenuLabel: "目录",
       returnToTopLabel: "返回顶部",
