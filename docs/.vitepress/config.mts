@@ -22,7 +22,7 @@ export default withPwa(
       ],
     },
     sitemap: {
-      hostname: "https://notes.sddegt.online",
+      hostname: "https://blog.sddegt.online",
     },
     title: "时代的二锅头",
     description:
